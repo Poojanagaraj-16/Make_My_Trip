@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MakeMyTrip Bus Automation Report</title>
+<style>
+*{box-sizing:border-box}body{font:14px/1.5 Arial,sans-serif;margin:0;color:#20242b;background:#f3f5f9}
+header{background:#fff;padding:22px max(24px,calc((100% - 1200px)/2));border-bottom:1px solid #e1e5ed}
+h1{font-size:22px;margin:0 0 5px;color:#182233}.subtitle{color:#647084;font-size:13px}
+main{max-width:1200px;margin:22px auto;padding:0 20px}.summary{display:flex;gap:20px;flex-wrap:wrap;padding:14px 18px;margin-bottom:16px;background:#fff;border:1px solid #e2e6ee;border-radius:7px}
+.summary strong{color:#182233}.filters{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap}.filters button{border:0;border-radius:5px;padding:8px 14px;background:#263448;color:#fff;font-weight:600;cursor:pointer}.filters button.active{background:#1672d4}.filters button:hover{background:#354b68}
+.table-wrap{overflow-x:auto;background:#fff;border:1px solid #e2e6ee;border-radius:7px}table{border-collapse:collapse;width:100%;min-width:850px}
+th{background:#111a2a;color:#fff;font-weight:600;text-align:left;padding:10px 12px}td{padding:10px 12px;border-bottom:1px solid #e9edf3;vertical-align:top}
+.test-row{border-left:3px solid #9aa4b2}.test-row.passed{border-left-color:#24a45a}.test-row.failed{border-left-color:#d84242}.test-row.skipped{border-left-color:#d39b16}.test-row.blocked{border-left-color:#8353bf}
+.number{width:42px}.test-name{min-width:370px}.file{min-width:190px;color:#596579;font-size:13px}.test-title{font-weight:700;color:#2868c7}.meta{display:block;margin-top:4px;color:#677386;font-size:12px}.separator{padding:0 4px;color:#9ca5b1}
+details summary{cursor:pointer;list-style:none}details summary::-webkit-details-marker{display:none}details summary:before{content:"›";display:inline-block;color:#69788e;font-size:18px;margin-right:8px;transition:transform .12s}details[open] summary:before{transform:rotate(90deg)}
+.detail-panel{margin:12px 0 0 22px;padding:16px;background:#f7f8fa;border-radius:6px;max-width:780px}.detail-panel h3{font-size:14px;margin:0 0 10px}.steps{margin:0;padding-left:20px;color:#34764d}.steps li{padding:2px 0}.steps li.failed{color:#b42318}.steps li.skipped{color:#788394}.step-icon{font-weight:700}.step-duration{color:#687386}.step-error{margin:3px 0 6px 20px;color:#b42318;font-size:12px;white-space:pre-wrap}
+.badge{display:inline-block;padding:3px 9px;border-radius:12px;font-size:11px;font-weight:700}.badge.passed{background:#d9f5e4;color:#18733c}.badge.failed{background:#ffe1df;color:#ad261e}.badge.skipped{background:#fff0c2;color:#856000}.badge.blocked{background:#eadffc;color:#63339a}
+.no-steps{color:#707b8c;margin:0}.test-error{white-space:pre-wrap;overflow:auto;background:#fff2f1;border-left:3px solid #d84242;padding:10px;margin:12px 0 0;font-size:12px}
+.footer{margin:14px 0;color:#707b8c;font-size:12px}
+</style></head><body>
+<header><h1>MAKE MY TRIP BUS AUTOMATION — EXECUTION REPORT</h1><div class="subtitle">Playwright functional results and executed step details</div></header>
+<main><div class="summary"><span><strong>Total Tests:</strong> 16</span><span class="passed"><strong>Passed:</strong> 0</span><span class="failed"><strong>Failed:</strong> 0</span><span class="skipped"><strong>Skipped:</strong> 0</span><span class="blocked"><strong>Blocked:</strong> 16</span><span><strong>Execution Time:</strong> 180.19s</span></div>
+<nav class="filters" aria-label="Filter tests"><button class="active" data-filter="ALL">All (16)</button><button data-filter="PASSED">Passed (0)</button><button data-filter="FAILED">Failed (0)</button><button data-filter="SKIPPED">Skipped (0)</button><button data-filter="BLOCKED">Blocked (16)</button></nav>
+<div class="table-wrap"><table><thead><tr><th>#</th><th>Test Name</th><th>File</th><th>Duration</th><th>Retry</th><th>Status</th></tr></thead><tbody><tr class="test-row blocked" data-status="BLOCKED">
+          <td class="number">1</td>
+          <td class="test-name"><details open><summary><span class="test-title">TC_01 - Search bus with valid source city, destination city and future travel date</span><span class="meta">REQ_BUS_01 <span class="separator">·</span> TC_01 <span class="separator">·</span> Positive <span class="separator">·</span> Microsoft Edge (Chromium)</span></summary><div class="detail-panel"><h3>Steps</h3><ul class="steps"><li class="failed"><span class="step-icon">✗</span> Open the Bus module <span class="step-duration">(1.0s)</span><div class="step-error">Error: The live MakeMyTrip Bus module returned a plain 200-OK response instead of the search form.</div></li></ul></div></details></td>
+          <td class="file">src\tests\functional\bus-search.functional.spec.ts:14</td>
+          <td>3.0s</td>
+          <td>0</td>
+          <td><span class="badge blocked">BLOCKED</span></td>
+        </tr>
+<tr class="test-row blocked" data-status="BLOCKED">
+          <td class="number">2</td>
+          <td class="test-name"><details><summary><span class="test-title">TC_02 - Verify source city auto-suggestions while entering source city</span><span class="meta">REQ_BUS_01 <span class="separator">·</span> TC_02 <span class="separator">·</span> Positive <span class="separator">·</span> Microsoft Edge (Chromium)</span></summary><div class="detail-panel"><h3>Steps</h3><ul class="steps"><li class="failed"><span class="step-icon">✗</span> Open the Bus module <span class="step-duration">(1.3s)</span><div class="step-error">Error: The live MakeMyTrip Bus module returned a plain 200-OK response instead of the search form.</div></li></ul></div></details></td>
+          <td class="file">src\tests\functional\bus-search.functional.spec.ts:32</td>
+          <td>4.3s</td>
+          <td>0</td>
+          <td><span class="badge blocked">BLOCKED</span></td>
+        </tr>
+<tr class="test-row blocked" data-status="BLOCKED">
+          <td class="number">3</td>
+          <td class="test-name"><details><summary><span class="test-title">TC_03 - Verify destination city auto-suggestions while entering destination city</span><span class="meta">REQ_BUS_01 <span class="separator">·</span> TC_03 <span class="separator">·</span> Positive <span class="separator">·</span> Microsoft Edge (Chromium)</span></summary><div class="detail-panel"><h3>Steps</h3><ul class="steps"><li class="failed"><span class="step-icon">✗</span> Open the Bus module <span class="step-duration">(0.7s)</span><div class="step-error">Error: The live MakeMyTrip Bus module returned a plain 200-OK response instead of the search form.</div></li></ul></div></details></td>
+          <td class="file">src\tests\functional\bus-search.functional.spec.ts:43</td>
+          <td>2.8s</td>
+          <td>0</td>
+          <td><span class="badge blocked">BLOCKED</span></td>
+        </tr>
+<tr class="test-row blocked" data-status="BLOCKED">
+          <td class="number">4</td>
+          <td class="test-name"><details><summary><span class="test-title">TC_04 - Verify validation when source and destination cities are same</span><span class="meta">REQ_BUS_01 <span class="separator">·</span> TC_04 <span class="separator">·</span> Negative <span class="separator">·</span> Microsoft Edge (Chromium)</span></summary><div class="detail-panel"><h3>Steps</h3><ul class="steps"><li class="failed"><span class="step-icon">✗</span> Open the Bus module <span class="step-duration">(0.8s)</span><div class="step-error">Error: The live MakeMyTrip Bus module returned a plain 200-OK response instead of the search form.</div></li></ul></div></details></td>
+          <td class="file">src\tests\functional\bus-search.functional.spec.ts:56</td>
+          <td>2.7s</td>
+          <td>0</td>
+          <td><span class="badge blocked">BLOCKED</span></td>
+        </tr>
+<tr class="test-row blocked" data-status="BLOCKED">
+          <td class="number">5</td>
+          <td class="test-name"><details><summary><span class="test-title">TC_01 - Search buses using valid future journey date and verify results</span><span class="meta">REQ_BUS_02 <span class="separator">·</span> TC_01 <span class="separator">·</span> Positive <span class="separator">·</span> Microsoft Edge (Chromium)</span></summary><div class="detail-panel"><h3>Steps</h3><ul class="steps"><li class="failed"><span class="step-icon">✗</span> Open the Bus module and configure the route <span class="step-duration">(0.9s)</span><div class="step-error">Error: The live MakeMyTrip Bus module returned a plain 200-OK response instead of the search form.</div></li></ul></div></details></td>
+          <td class="file">src\tests\functional\journey-date.functional.spec.ts:14</td>
+          <td>3.0s</td>
+          <td>0</td>
+          <td><span class="badge blocked">BLOCKED</span></td>
+        </tr>
+<tr class="test-row blocked" data-status="BLOCKED">
+          <td class="number">6</td>
+          <td class="test-name"><details><summary><span class="test-title">TC_02 - Change selected journey date and verify bus results refresh</span><span class="meta">REQ_BUS_02 <span class="separator">·</span> TC_02 <span class="separator">·</span> Positive <span class="separator">·</span> Microsoft Edge (Chromium)</span></summary><div class="detail-panel"><h3>Steps</h3><ul class="steps"><li class="failed"><span class="step-icon">✗</span> Search for buses on the first future date <span class="step-duration">(1.0s)</span><div class="step-error">Error: The live MakeMyTrip Bus module returned a plain 200-OK response instead of the search form.</div></li></ul></div></details></td>
+          <td class="file">src\tests\functional\journey-date.functional.spec.ts:32</td>
+          <td>3.0s</td>
+          <td>0</td>
+          <td><span class="badge blocked">BLOCKED</span></td>
+        </tr>
+<tr class="test-row blocked" data-status="BLOCKED">
+          <td class="number">7</td>
+          <td class="test-name"><details><summary><span class="test-title">TC_03 - Verify selected journey date is correctly reflected on results page</span><span class="meta">REQ_BUS_02 <span class="separator">·</span> TC_03 <span class="separator">·</span> Positive <span class="separator">·</span> Microsoft Edge (Chromium)</span></summary><div class="detail-panel"><h3>Steps</h3><ul class="steps"><li class="failed"><span class="step-icon">✗</span> Search with a selected future travel date <span class="step-duration">(1.1s)</span><div class="step-error">Error: The live MakeMyTrip Bus module returned a plain 200-OK response instead of the search form.</div></li></ul></div></details></td>
+          <td class="file">src\tests\functional\journey-date.functional.spec.ts:54</td>
+          <td>3.9s</td>
+          <td>0</td>
+          <td><span class="badge blocked">BLOCKED</span></td>
+        </tr>
+<tr class="test-row blocked" data-status="BLOCKED">
+          <td class="number">8</td>
+          <td class="test-name"><details><summary><span class="test-title">TC_04 - Verify past dates are disabled and cannot be selected</span><span class="meta">REQ_BUS_02 <span class="separator">·</span> TC_04 <span class="separator">·</span> Negative <span class="separator">·</span> Microsoft Edge (Chromium)</span></summary><div class="detail-panel"><h3>Steps</h3><ul class="steps"><li class="failed"><span class="step-icon">✗</span> Open the Bus module and travel-date picker <span class="step-duration">(1.4s)</span><div class="step-error">Error: The live MakeMyTrip Bus module returned a plain 200-OK response instead of the search form.</div></li></ul></div></details></td>
+          <td class="file">src\tests\functional\journey-date.functional.spec.ts:72</td>
+          <td>5.2s</td>
+          <td>0</td>
+          <td><span class="badge blocked">BLOCKED</span></td>
+        </tr>
+<tr class="test-row blocked" data-status="BLOCKED">
+          <td class="number">9</td>
+          <td class="test-name"><details><summary><span class="test-title">TC_01 - Apply AC filter and verify only AC buses are displayed</span><span class="meta">REQ_BUS_03 <span class="separator">·</span> TC_01 <span class="separator">·</span> Positive <span class="separator">·</span> Microsoft Edge (Chromium)</span></summary><div class="detail-panel"><h3>Steps</h3><ul class="steps"><li class="failed"><span class="step-icon">✗</span> Search for buses on a future date <span class="step-duration">(19.4s)</span><div class="step-error">Error: The live MakeMyTrip results route rendered a plain 200-OK response instead of the bus listings.</div></li></ul></div></details></td>
+          <td class="file">src\tests\functional\bus-filter.functional.spec.ts:15</td>
+          <td>25.3s</td>
+          <td>0</td>
+          <td><span class="badge blocked">BLOCKED</span></td>
+        </tr>
+<tr class="test-row blocked" data-status="BLOCKED">
+          <td class="number">10</td>
+          <td class="test-name"><details><summary><span class="test-title">TC_02 - Apply Sleeper filter and verify only Sleeper buses are displayed</span><span class="meta">REQ_BUS_03 <span class="separator">·</span> TC_02 <span class="separator">·</span> Positive <span class="separator">·</span> Microsoft Edge (Chromium)</span></summary><div class="detail-panel"><h3>Steps</h3><ul class="steps"><li class="failed"><span class="step-icon">✗</span> Search for buses on a future date <span class="step-duration">(3.0s)</span><div class="step-error">Error: The live MakeMyTrip Bus module returned a plain 200-OK response instead of the search form.</div></li></ul></div></details></td>
+          <td class="file">src\tests\functional\bus-filter.functional.spec.ts:34</td>
+          <td>7.3s</td>
+          <td>0</td>
+          <td><span class="badge blocked">BLOCKED</span></td>
+        </tr>
+<tr class="test-row blocked" data-status="BLOCKED">
+          <td class="number">11</td>
+          <td class="test-name"><details><summary><span class="test-title">TC_03 - Apply Departure Time filter and verify filtered results</span><span class="meta">REQ_BUS_03 <span class="separator">·</span> TC_03 <span class="separator">·</span> Positive <span class="separator">·</span> Microsoft Edge (Chromium)</span></summary><div class="detail-panel"><h3>Steps</h3><ul class="steps"><li class="failed"><span class="step-icon">✗</span> Search for buses on a future date <span class="step-duration">(1.2s)</span><div class="step-error">Error: The live MakeMyTrip Bus module returned a plain 200-OK response instead of the search form.</div></li></ul></div></details></td>
+          <td class="file">src\tests\functional\bus-filter.functional.spec.ts:53</td>
+          <td>6.2s</td>
+          <td>0</td>
+          <td><span class="badge blocked">BLOCKED</span></td>
+        </tr>
+<tr class="test-row blocked" data-status="BLOCKED">
+          <td class="number">12</td>
+          <td class="test-name"><details><summary><span class="test-title">TC_04 - Apply AC, Seater and Single Seat filters and verify the too-many-filters message</span><span class="meta">REQ_BUS_03 <span class="separator">·</span> TC_04 <span class="separator">·</span> Negative <span class="separator">·</span> Microsoft Edge (Chromium)</span></summary><div class="detail-panel"><h3>Steps</h3><ul class="steps"><li class="failed"><span class="step-icon">✗</span> Search for buses on a future date <span class="step-duration">(1.0s)</span><div class="step-error">Error: The live MakeMyTrip Bus module returned a plain 200-OK response instead of the search form.</div></li></ul></div></details></td>
+          <td class="file">src\tests\functional\bus-filter.functional.spec.ts:72</td>
+          <td>3.5s</td>
+          <td>0</td>
+          <td><span class="badge blocked">BLOCKED</span></td>
+        </tr>
+<tr class="test-row blocked" data-status="BLOCKED">
+          <td class="number">13</td>
+          <td class="test-name"><details><summary><span class="test-title">TC_01 - Enter valid passenger details and proceed to Booking Summary</span><span class="meta">REQ_BUS_04 <span class="separator">·</span> TC_01 <span class="separator">·</span> Positive <span class="separator">·</span> Microsoft Edge (Chromium)</span></summary><div class="detail-panel"><h3>Steps</h3><ul class="steps"><li class="failed"><span class="step-icon">✗</span> Search and choose an available bus <span class="step-duration">(0.8s)</span><div class="step-error">Error: The live MakeMyTrip Bus module returned a plain 200-OK response instead of the search form.</div></li></ul></div></details></td>
+          <td class="file">src\tests\functional\passenger-booking.functional.spec.ts:15</td>
+          <td>4.9s</td>
+          <td>0</td>
+          <td><span class="badge blocked">BLOCKED</span></td>
+        </tr>
+<tr class="test-row blocked" data-status="BLOCKED">
+          <td class="number">14</td>
+          <td class="test-name"><details><summary><span class="test-title">TC_02 - Verify Booking Summary displays selected bus, passenger details and fare correctly</span><span class="meta">REQ_BUS_04 <span class="separator">·</span> TC_02 <span class="separator">·</span> Positive <span class="separator">·</span> Microsoft Edge (Chromium)</span></summary><div class="detail-panel"><h3>Steps</h3><ul class="steps"><li class="failed"><span class="step-icon">✗</span> Search for buses and select an available bus <span class="step-duration">(0.8s)</span><div class="step-error">Error: The live MakeMyTrip Bus module returned a plain 200-OK response instead of the search form.</div></li></ul></div></details></td>
+          <td class="file">src\tests\functional\passenger-booking.functional.spec.ts:37</td>
+          <td>3.9s</td>
+          <td>0</td>
+          <td><span class="badge blocked">BLOCKED</span></td>
+        </tr>
+<tr class="test-row blocked" data-status="BLOCKED">
+          <td class="number">15</td>
+          <td class="test-name"><details><summary><span class="test-title">TC_03 - Enter invalid mobile number and verify validation</span><span class="meta">REQ_BUS_04 <span class="separator">·</span> TC_03 <span class="separator">·</span> Negative <span class="separator">·</span> Microsoft Edge (Chromium)</span></summary><div class="detail-panel"><h3>Steps</h3><ul class="steps"><li class="failed"><span class="step-icon">✗</span> Search for buses and open passenger details <span class="step-duration">(0.8s)</span><div class="step-error">Error: The live MakeMyTrip Bus module returned a plain 200-OK response instead of the search form.</div></li></ul></div></details></td>
+          <td class="file">src\tests\functional\passenger-booking.functional.spec.ts:66</td>
+          <td>3.0s</td>
+          <td>0</td>
+          <td><span class="badge blocked">BLOCKED</span></td>
+        </tr>
+<tr class="test-row blocked" data-status="BLOCKED">
+          <td class="number">16</td>
+          <td class="test-name"><details><summary><span class="test-title">TC_04 - Leave mandatory passenger fields blank and verify validation messages</span><span class="meta">REQ_BUS_04 <span class="separator">·</span> TC_04 <span class="separator">·</span> Negative <span class="separator">·</span> Microsoft Edge (Chromium)</span></summary><div class="detail-panel"><h3>Steps</h3><ul class="steps"><li class="failed"><span class="step-icon">✗</span> Search for buses and open passenger details <span class="step-duration">(0.9s)</span><div class="step-error">Error: The live MakeMyTrip Bus module returned a plain 200-OK response instead of the search form.</div></li></ul></div></details></td>
+          <td class="file">src\tests\functional\passenger-booking.functional.spec.ts:89</td>
+          <td>3.0s</td>
+          <td>0</td>
+          <td><span class="badge blocked">BLOCKED</span></td>
+        </tr></tbody></table></div>
+<p class="footer"><strong>Execution command:</strong> npm run test:chromium<br>Step names, statuses, durations, and errors are collected from Playwright's executed <code>TestResult.steps</code>. Details expand by selecting a test name.</p></main>
+<script>
+document.querySelectorAll(".filters button").forEach(button=>button.addEventListener("click",()=>{document.querySelectorAll(".filters button").forEach(item=>item.classList.remove("active"));button.classList.add("active");const filter=button.dataset.filter;document.querySelectorAll(".test-row").forEach(row=>{row.hidden=filter!=="ALL"&&row.dataset.status!==filter})}));
+</script>
+</body></html>

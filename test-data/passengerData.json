@@ -1,0 +1,17 @@
+{
+  "validPassenger": {
+    "name": "Pooja Test",
+    "age": "28",
+    "gender": "Female",
+    "mobile": "9000000000"
+  },
+  "invalidMobile": {
+    "mobile": "123"
+  },
+  "blankPassenger": {
+    "name": "",
+    "age": "",
+    "gender": "",
+    "mobile": ""
+  }
+}

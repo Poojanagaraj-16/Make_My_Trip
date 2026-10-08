@@ -1,0 +1,23 @@
+{
+  "name": "makemytrip-bus-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright TypeScript functional automation for MakeMyTrip Bus",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:headed": "playwright test --project=chromium --headed",
+    "test:search": "playwright test src/tests/functional/bus-search.functional.spec.ts --project=chromium",
+    "test:dates": "playwright test src/tests/functional/journey-date.functional.spec.ts --project=chromium",
+    "test:filters": "playwright test src/tests/functional/bus-filter.functional.spec.ts --project=chromium",
+    "test:booking": "playwright test src/tests/functional/passenger-booking.functional.spec.ts --project=chromium",
+    "typecheck": "tsc --noEmit",
+    "report:open": "playwright show-report reports"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^26.6.4",
+    "typescript": "^5.9.3"
+  }
+}

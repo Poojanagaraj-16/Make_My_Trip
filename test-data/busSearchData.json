@@ -1,0 +1,16 @@
+{
+  "validSearch": {
+    "sourceCity": "Bangalore",
+    "destinationCity": "Chennai"
+  },
+  "sameCitySearch": {
+    "sourceCity": "Bangalore",
+    "destinationCity": "Bangalore"
+  },
+  "sourceSuggestion": {
+    "city": "Bangalore"
+  },
+  "destinationSuggestion": {
+    "city": "Chennai"
+  }
+}
